@@ -1,161 +1,272 @@
 # My-Excel-Projects
-# 📊 Excel Bike Sales & SWITCH Function Analysis
+🚲 Excel Bike Sales Analysis
 
-## 📌 Project Overview
 
-This project demonstrates practical Microsoft Excel data analysis techniques using a Bike Sales dataset.
 
-The workbook contains two main tasks:
 
-1. **Bike Sales Analysis** – analysing sales volumes by product and county using PivotTables.
-2. **SWITCH Function Task** – demonstrating the use of Excel's `SWITCH` function to create logic-based results from data.
 
-The project was completed as part of my Excel/data analytics learning journey and demonstrates my ability to transform raw data into structured analysis and actionable insights.
 
----
+📌 Project Overview
 
-## 🎯 Project Objectives
+This project demonstrates practical Microsoft Excel data analysis using a Bike Sales dataset. The workbook uses Excel Tables, PivotTables, and conditional logic to transform transactional data into clear business insights.
 
-The main objectives of this project were to:
+The analysis focuses on customer profitability, product sales performance, geographic comparisons, and sales-volume classification.
 
-- Analyse bike-related sales data using Microsoft Excel.
-- Summarise sales volumes by county and product.
-- Use PivotTables to identify sales patterns.
-- Compare product performance across different counties.
-- Calculate overall sales totals.
-- Practise the Excel `SWITCH` function.
-- Develop practical spreadsheet and data-analysis skills.
+🎯 Project Objectives
 
----
+Analyse profit by customer age group.
 
-## 🛠️ Tools & Technologies
+Compare product sales volume across counties.
 
-- **Microsoft Excel**
-- PivotTables
-- Excel formulas
-- `SWITCH` function
-- Data summarisation
-- Data analysis
+Use PivotTables to summarise and restructure data.
 
----
+Apply Excel's SWITCH function to classify sales performance.
 
-## 📂 Workbook Structure
+Present business findings in a simple, decision-friendly format.
 
-The workbook contains several worksheets used for the different stages of the analysis:
+🛠️ Skills & Tools
 
-| Worksheet | Purpose |
-|-----------|---------|
-| `Sheet1` | Supporting worksheet / initial analysis |
-| `Bike Sales` | Bike sales data and analysis |
-| `Sheet2` | PivotTable analysis |
-| `Sheet3` | Alternative PivotTable view |
-| `SWITCH etc.` | SWITCH function exercise |
+Microsoft Excel was used for:
 
----
+Excel Tables
 
-# 🚲 Task 1 – Bike Sales Analysis
+PivotTables
 
-The Bike Sales task uses PivotTables to analyse **Sales Volume** by:
+Sorting and filtering
 
-- Product
-- County
+Data aggregation
 
-The products analysed are:
+SWITCH formulas
 
-- Laptops
-- Printers
-- Smartphones
+Conditional business logic
 
-The counties included in the analysis are:
+Sales and profit analysis
 
-- Cornwall
-- Durham
-- Essex
-- Greater Manchester
-- Lancashire
-- Yorkshire
+Data interpretation
 
----
+📊 Dataset
 
-## 📊 Sales Volume by Product
+The Bike Sales dataset includes fields such as:
 
-The PivotTable shows the following overall sales volumes:
+Category
 
-| Product | Total Sales Volume |
-|---------|-------------------:|
-| Laptops | 2,450 |
-| Printers | 1,500 |
-| Smartphones | 1,250 |
-| **Grand Total** | **5,200** |
+Example Fields
 
-### Key Finding
+Order information
 
-**Laptops were the highest-selling product**, with a total sales volume of **2,450**, representing almost half of the total recorded sales volume.
+Sales Order Number, Date, Day, Month, Year
 
-Printers generated **1,500** sales, while Smartphones generated **1,250**.
+Customer information
 
----
+Customer Age, Age Group, Customer Gender
 
-## 📍 Sales Volume by County
+Geography
 
-The analysis also summarises total sales volume by county:
+Country, State
 
-| County | Total Sales Volume |
-|--------|-------------------:|
-| Cornwall | 1,100 |
-| Essex | 1,100 |
-| Greater Manchester | 1,000 |
-| Lancashire | 750 |
-| Yorkshire | 700 |
-| Durham | 550 |
-| **Grand Total** | **5,200** |
+Product information
 
-### Key Findings
+Product Category, Sub-Category, Product Description
 
-- **Cornwall and Essex** recorded the highest total sales volumes at **1,100 each**.
-- **Greater Manchester** followed with **1,000**.
-- **Durham** recorded the lowest total sales volume at **550**.
-- The combined sales volume across all counties was **5,200**.
+Sales metrics
 
----
+Order Quantity, Unit Cost, Unit Price, Profit
 
-## 🔎 Product Performance by County
+📈 Analysis 1 — Profit by Age Group
 
-The PivotTable allows product performance to be compared across individual counties.
+A PivotTable was created to calculate total profit for each customer age group.
 
-| County | Laptops | Printers | Smartphones | Total |
-|--------|--------:|---------:|------------:|------:|
-| Cornwall | 700 | 400 | 0 | 1,100 |
-| Essex | 0 | 800 | 300 | 1,100 |
-| Greater Manchester | 400 | 0 | 600 | 1,000 |
-| Lancashire | 600 | 0 | 150 | 750 |
-| Yorkshire | 500 | 0 | 200 | 700 |
-| Durham | 250 | 300 | 0 | 550 |
-| **Total** | **2,450** | **1,500** | **1,250** | **5,200** |
+Age Group
 
-### Observations
+Sum of Profit
 
-- Cornwall generated the majority of its sales through **Laptops**.
-- Essex recorded particularly strong **Printer** sales.
-- Greater Manchester was the strongest county for **Smartphones**.
-- Lancashire's sales were primarily driven by **Laptops**.
-- Yorkshire also showed strong Laptop sales.
-- Durham generated sales from Laptops and Printers but no recorded Smartphone sales.
+Adults (35–64)
 
----
+$93,496
 
-# 🔀 Task 2 – Excel SWITCH Function
+Young Adults (25–34)
 
-The second task focuses on Excel's `SWITCH` function.
+$53,962
 
-`SWITCH` is useful when a value needs to be compared against multiple possible conditions and a corresponding result returned.
+Youth (<25)
 
-A simplified example is:
+$16,050
 
-```excel
-=SWITCH(A2,
-    1,"Low",
-    2,"Medium",
-    3,"High",
-    "Unknown"
-)
+Grand Total
+
+$163,508
+
+Key Finding
+
+Adults aged 35–64 generated the highest profit: $93,496. This represents approximately 57% of the $163,508 total profit, making this age group the strongest contributor among the three segments shown.
+
+📊 Analysis 2 — Sales Volume by Product and County
+
+A second PivotTable compares sales volume across counties and three product categories:
+
+Laptops
+
+Printers
+
+Smartphones
+
+The analysis produced a total sales volume of 5,200 units.
+
+Product Totals
+
+Product
+
+Sales Volume
+
+Laptops
+
+2,450
+
+Printers
+
+1,500
+
+Smartphones
+
+1,250
+
+Grand Total
+
+5,200
+
+County Totals
+
+County
+
+Sales Volume
+
+Cornwall
+
+1,100
+
+Essex
+
+1,100
+
+Greater Manchester
+
+1,000
+
+Lancashire
+
+750
+
+Yorkshire
+
+700
+
+Durham
+
+550
+
+Grand Total
+
+5,200
+
+Key Findings
+
+Laptops were the highest-volume product, accounting for 2,450 units.
+
+Cornwall and Essex jointly recorded the highest county totals, with 1,100 units each.
+
+The PivotTable was rearranged by switching the row and column fields, demonstrating how Excel can provide different analytical views without changing the underlying data.
+
+🔄 Analysis 3 — Sales Volume Classification
+
+A SWITCH formula was used to convert numerical sales volumes into easy-to-read performance categories.
+
+=SWITCH(TRUE,C2>600,"high",C2>=300,"medium","low")
+
+Classification Rules
+
+Sales Volume
+
+Classification
+
+Greater than 600
+
+High
+
+300 to 600
+
+Medium
+
+Below 300
+
+Low
+
+This technique makes numerical results easier to interpret and can be useful for dashboards, KPI reporting, and performance monitoring.
+
+💡 Business Insights
+
+The analysis highlights several useful findings:
+
+Adults aged 35–64 are the most profitable customer segment in the age-group summary.
+
+Laptops lead overall product sales volume, suggesting stronger demand than printers and smartphones in the exercise dataset.
+
+Cornwall and Essex are the strongest counties by total sales volume, each reaching 1,100 units.
+
+PivotTables allow the same dataset to be viewed from multiple perspectives quickly.
+
+Categorising values as High, Medium, and Low makes performance easier for stakeholders to interpret.
+
+📸 Project Screenshots
+
+Add your screenshots to an images folder in this GitHub repository, then use the examples below to display them in the README.
+
+images/
+├── bike-sales-data.png
+├── profit-by-age-group.png
+├── pivot-product-by-county.png
+├── pivot-county-by-product.png
+└── switch-classification.png
+
+Then add images using:
+
+![Bike Sales Dataset](images/bike-sales-data.png)
+![Profit by Age Group PivotTable](images/profit-by-age-group.png)
+![Product by County PivotTable](images/pivot-product-by-county.png)
+![County by Product PivotTable](images/pivot-county-by-product.png)
+![SWITCH Classification](images/switch-classification.png)
+
+📂 Suggested Repository Structure
+
+excel-bike-sales-analysis/
+├── README.md
+├── Day_3_Task_1_Bike_Sales.xlsx
+└── images/
+    ├── bike-sales-data.png
+    ├── profit-by-age-group.png
+    ├── pivot-product-by-county.png
+    ├── pivot-county-by-product.png
+    └── switch-classification.png
+
+🚀 What This Project Demonstrates
+
+This project demonstrates my ability to:
+
+Work with structured datasets in Excel.
+
+Build and modify PivotTables.
+
+Summarise sales and profitability metrics.
+
+Apply conditional logic with Excel formulas.
+
+Identify meaningful patterns in business data.
+
+Communicate analytical findings clearly.
+
+Turn raw spreadsheet data into actionable insights.
+
+👤 Author
+
+Shadedemon89
+
+This project forms part of my data analysis portfolio and demonstrates practical Excel skills applicable to junior Data Analyst and Data Technician roles.
