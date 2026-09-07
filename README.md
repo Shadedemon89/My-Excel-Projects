@@ -76,25 +76,7 @@ Order Quantity, Unit Cost, Unit Price, Profit
 
 A PivotTable was created to calculate total profit for each customer age group.
 
-Age Group
-
-Sum of Profit
-
-Adults (35–64)
-
-$93,496
-
-Young Adults (25–34)
-
-$53,962
-
-Youth (<25)
-
-$16,050
-
-Grand Total
-
-$163,508
+<img width="256" height="111" alt="image" src="https://github.com/user-attachments/assets/a7f3e0b2-e58e-4b58-b912-6fdb57b1612e" />
 
 Key Finding
 
@@ -104,75 +86,7 @@ Adults aged 35–64 generated the highest profit: $93,496. This represents appro
 
 A second PivotTable compares sales volume across counties and three product categories:
 
-Laptops
-
-Printers
-
-Smartphones
-
-The analysis produced a total sales volume of 5,200 units.
-
-Product Totals
-
-Product
-
-Sales Volume
-
-Laptops
-
-2,450
-
-Printers
-
-1,500
-
-Smartphones
-
-1,250
-
-Grand Total
-
-5,200
-
-County Totals
-
-County
-
-Sales Volume
-
-Cornwall
-
-1,100
-
-Essex
-
-1,100
-
-Greater Manchester
-
-1,000
-
-Lancashire
-
-750
-
-Yorkshire
-
-700
-
-Durham
-
-550
-
-Grand Total
-
-5,200
-
-Key Findings
-
-Laptops were the highest-volume product, accounting for 2,450 units.
-
-Cornwall and Essex jointly recorded the highest county totals, with 1,100 units each.
+<img width="453" height="187" alt="image" src="https://github.com/user-attachments/assets/d5873762-6614-4367-8d95-f675a464c583" />
 
 The PivotTable was rearranged by switching the row and column fields, demonstrating how Excel can provide different analytical views without changing the underlying data.
 
@@ -182,23 +96,7 @@ A SWITCH formula was used to convert numerical sales volumes into easy-to-read p
 
 =SWITCH(TRUE,C2>600,"high",C2>=300,"medium","low")
 
-Classification Rules
-
-Sales Volume
-
-Classification
-
-Greater than 600
-
-High
-
-300 to 600
-
-Medium
-
-Below 300
-
-Low
+<img width="873" height="307" alt="image" src="https://github.com/user-attachments/assets/7e13ef2d-f9c2-49df-990f-63eee20f46b4" />
 
 This technique makes numerical results easier to interpret and can be useful for dashboards, KPI reporting, and performance monitoring.
 
@@ -216,36 +114,6 @@ PivotTables allow the same dataset to be viewed from multiple perspectives quick
 
 Categorising values as High, Medium, and Low makes performance easier for stakeholders to interpret.
 
-📸 Project Screenshots
-
-Add your screenshots to an images folder in this GitHub repository, then use the examples below to display them in the README.
-
-images/
-├── bike-sales-data.png
-├── profit-by-age-group.png
-├── pivot-product-by-county.png
-├── pivot-county-by-product.png
-└── switch-classification.png
-
-Then add images using:
-
-![Bike Sales Dataset](images/bike-sales-data.png)
-![Profit by Age Group PivotTable](images/profit-by-age-group.png)
-![Product by County PivotTable](images/pivot-product-by-county.png)
-![County by Product PivotTable](images/pivot-county-by-product.png)
-![SWITCH Classification](images/switch-classification.png)
-
-📂 Suggested Repository Structure
-
-excel-bike-sales-analysis/
-├── README.md
-├── Day_3_Task_1_Bike_Sales.xlsx
-└── images/
-    ├── bike-sales-data.png
-    ├── profit-by-age-group.png
-    ├── pivot-product-by-county.png
-    ├── pivot-county-by-product.png
-    └── switch-classification.png
 
 🚀 What This Project Demonstrates
 
